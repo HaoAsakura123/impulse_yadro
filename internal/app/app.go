@@ -263,7 +263,7 @@ func ProcessingEvents(competitors map[int]*storage.Competitor, events []storage.
 			if startDelay > deltaTime {
 				comp.Disqualified = true
 
-				fmt.Printf("[%s] 32 %d\n",
+				fmt.Printf("[%s] 32 The competitor(%d) is disqualified\n",
 					comp.ActualStart.Format(storage.TimeFmt),
 					comp.ID)
 			}
